@@ -3,114 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="description" content="P Arvind - FullStack Web Developer & Game Developer Portfolio">
+    <meta name="keywords" content="web developer, game developer, fullstack, MERN stack, Unity, portfolio">
+    <meta name="author" content="P Arvind">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    
+    <title>P Arvind - Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-        <span class="span">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
-        </span>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
         </div>
-        <div class="home" id="home">Hi, I'm P Arvind.</div>
-        <div class="home-1" id="">FullStack Web Developer & Game Developer.</div>
-        <div class="home-2" id="">A Computer Science Engineering Student who found his interest in Game Designing. Unity Game Developer who is interested in Game Design & Level Mechanics. Additionally, I am a FullStack Web Developer enthusiastic about creating responsive websites to offer solutions, and I am proficient in the MERN Stack.</div>
-
-        <div class="skills" id="skills">Skills:</div>
-
-        <div class="skills-1" >Languages:</div>
-        <div class="skills-2" >
-            C, C++,
-            Python,
-            Java,
-            HTML5, CSS3, JavaScript,
-            ReactJS, NodeJS, ExpressJs
-        </div>
-        <div class="skills-1" >Database:</div>
-        <div class="skills-2" >
-            MongoDB, MySQL
-        </div>
-        <div class="skills-1" >Softwares & Tools:</div>
-        <div class="skills-2" >
-            Figma,
-            Unity, Unreal Engine,
-            Visual Studio Code,
-            Neovim,
-            Git ,Github
-        </div>
-
-        <div class="projects" id="projects">Projects:</div>
-
-        <div class="projects-1" >TechTrove - A Fullstack PC Components Website</div>
-        <div class="projects-2" >React, Express, Node, MongoDB (MERN Stack)</div>
-        <div class="projects-3" >
-            <ul>
-                <li>A PC Components Buying and Selling Website.</li>
-                <li>Implemented a REST API to manage backend with Express and NodeJS</li>
-                <li>Implemented an Admin Panel for the seller to add products / Manage Orders form Database.</li>
-                <li>A User Panel for Categorizing and Displaying Products .</li>
-                <li>Implemented User Authentication using JWT (JSON Web Tokens).</li>
-            </ul>
-        </div>
-        <div class="projects-1" >Book Store App</div>
-        <div class="projects-2" >React, Express, Node, MongoDB, Tailwind CSS</div>
-        <div class="projects-3" >
-            <ul>
-                <li>Responsive UI using React and TailWind CSS.</li>
-                <li>Admin Panel to ADD / UPDATE / DELETE Books form Database.</li>
-                <li>Route Management using React-Router.</li>
-            </ul>
-        </div>
-
-        <div class="projects-1" >DoomClone - 3D FPS Prototype</div>
-        <div class="projects-2" >C#, Unity, ProBuilder</div>
-        <div class="projects-3" >
-            <ul>
-                <li>A Simple 3D First Person Shooter built using Unity Game Engine.</li>
-                <li>Uses RigidBody / Ragdoll Model for Realistic Physics Simulation.</li>
-                <li>Implemented Enemy AI.</li>
-                <li>Implemented Local Multiplayer using NetCode. </li>
-                <li>3D Assets created using Probuilder Toolkit.</li>
-            </ul>
-        </div>
-
-        <div class="projects-1" >Webpage Creation Bot</div>
-        <div class="projects-2" >UiPath Studio</div>
-        <div class="projects-3" >
-            <ul>
-                <li>Automation Bot that Provide Website Boilerplate Code based on User Input.</li>
-                <li>Uses Web Scraping from ChatGPT.</li>
-                <li>Returns Webpage with HTML, CSS, JavaScript.</li>
-            </ul>
-        </div>
-
-        <div class="contact" id="contact">Contact Me:</div>
-
-        <div class="contact-1" id="contact">
-        <a href="mailto:arvindsekar@protonmail.com">E-Mail</a>
-        <a href="https://www.linkedin.com/in/p-arvind-20a03a249/">Linkedin</a>
-        <a href="https://github.com/Arvind200323">Github</a>
-        </div>
-
-        <footer class="footer">
-            <p>Portfolio Page done by Arvind</p>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact Me</a>
-            </nav>
-          </footer>
     </div>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="#home"></a>
+            </div>
+            <div class="nav-links">
+                <a href="#home"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="home">Hi, I'm P Arvind.</h1>
+                    <h2 class="home-1">FullStack Web Developer & Game Developer</h2>
+                    <p class="home-2">A Computer Science Engineering Student passionate about Game Design and Web Development. Unity Game Developer interested in Game Design & Level Mechanics. Additionally, I'm a FullStack Web Developer enthusiastic about creating responsive websites and proficient in the MERN Stack.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="floating-icons">
+                            <i class="fab fa-react floating-icon" style="--delay: 0s"></i>
+                            <i class="fab fa-node-js floating-icon" style="--delay: 1s"></i>
+                            <i class="fab fa-unity floating-icon" style="--delay: 2s"></i>
+                            <i class="fab fa-js-square floating-icon" style="--delay: 3s"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Computer Science Engineering student with a deep interest in both web development and game design. My journey in technology has led me to explore various domains, from creating immersive gaming experiences to building robust web applications.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>4+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                        <!-- <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="section-header">
+                <h2 class="skills">Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skills-1"><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skills-1"><i class="fas fa-globe"></i> Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>NodeJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>ExpressJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skills-1"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skills-1"><i class="fas fa-tools"></i> Tools & Software</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-unity"></i>
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Unreal Engine</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h2 class="projects">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="projects-1">TechTrove - PC Components Website</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Node</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="projects-3">
+                        <ul>
+                            <li>A PC Components Buying and Selling Website</li>
+                            <li>Implemented a REST API to manage backend with Express and NodeJS</li>
+                            <li>Implemented an Admin Panel for sellers to add products and manage orders</li>
+                            <li>User Panel for categorizing and displaying products</li>
+                            <li>Implemented User Authentication using JWT (JSON Web Tokens)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="projects-1">Book Store App</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Node</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="projects-3">
+                        <ul>
+                            <li>Responsive UI using React and TailWind CSS</li>
+                            <li>Admin Panel to ADD / UPDATE / DELETE Books from Database</li>
+                            <li>Route Management using React-Router</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="projects-1">DoomClone - 3D FPS Prototype</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">ProBuilder</span>
+                    </div>
+                    <div class="projects-3">
+                        <ul>
+                            <li>A Simple 3D First Person Shooter built using Unity Game Engine</li>
+                            <li>Uses RigidBody / Ragdoll Model for Realistic Physics Simulation</li>
+                            <li>Implemented Enemy AI</li>
+                            <li>Implemented Local Multiplayer using NetCode</li>
+                            <li>3D Assets created using Probuilder Toolkit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="projects-1">Webpage Creation Bot</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">UiPath Studio</span>
+                    </div>
+                    <div class="projects-3">
+                        <ul>
+                            <li>Automation Bot that provides Website Boilerplate Code based on User Input</li>
+                            <li>Uses Web Scraping from ChatGPT</li>
+                            <li>Returns Webpage with HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2 class="contact">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Let's connect and discuss opportunities, collaborations, or just have a chat about technology!</p>
+                    <div class="contact-links">
+                        <a href="mailto:arvindsekar@protonmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>arvindsekar@protonmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/p-arvind-20a03a249/" class="contact-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/Arvind200323" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 P Arvind. All rights reserved.</p>
+                </div>
+                <nav class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="social-links">
+                    <a href="https://github.com/Arvind200323" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/p-arvind-20a03a249/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:arvindsekar@protonmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
-
-
-
